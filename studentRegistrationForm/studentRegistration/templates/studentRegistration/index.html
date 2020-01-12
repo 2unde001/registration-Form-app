@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Home Page</title>
+
+  </head>
+  <body style="background-color:#e3e8ff;">
+
+    <div class="container">
+      <h1 style="margin:45px; color:#455060; text-align:center">Student Registartion Form</h1>
+
+      <div class="row">
+        <div class="mx-auto w-50">
+
+          <form method="post">
+
+            <fieldset>
+              <legend></legend>
+              {% csrf_token %}
+              {{form.as_p}} <!-- Form would display as paragraph -->
+              <input type="submit" class="btn btn-primary" value="Submit Application">
+
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </body>
+</html>
