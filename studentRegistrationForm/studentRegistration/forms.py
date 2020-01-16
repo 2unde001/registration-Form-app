@@ -10,7 +10,7 @@ class Registration(forms.Form):
     .TextInput(attrs={'class':'form-control', 'placeholder':'Middle Name'}))
     lastname = forms.CharField(label='Last Name', widget=forms
     .TextInput(attrs={'class':'form-control', 'placeholder':'Last Name'}))
-    email = forms.EmailField(label="Student Email", widget=forms
+    email = forms.EmailField(label="Student's Email", widget=forms
     .TextInput(attrs={'class':'form-control','placeholder':'Email' }))
     addressOne = forms.CharField(label='Street Address 1',widget=forms
     .TextInput(attrs={'class':'form-control', 'placeholder':'Address 1'}))
